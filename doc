@@ -1,0 +1,22 @@
+REDUX
+a standalone third party library
+make state management, the management of application state easier (HOW?)
+when we have to pass data around through query props, state management became unnecessarily difficult.
+
+STATE
+determines what needs to be rendered
+submit data
+authentication
+UI state (local)
+
+need state information in a totally different area 
+-> need to create a connection
+-> react doesnt react to global state management (efficiency)
+
+redux gives us a certain flow of data
+Central store -> entire app state (giant JS obj)
+component needs to have a clear and predictable process of updating state
+ACTION (dipatches from comp) -> info package + payload, messenger, doesn't hold logic
+REDUCER -> define code for actions, function recieves old state and action returns updated state(new js obj), no async, no sideeffects
+store triggers all subscriptions
+comp can subscribe to store updates
